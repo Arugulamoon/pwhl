@@ -1,4 +1,4 @@
-package pwhl_test
+package players_test
 
 import (
 	"testing"
@@ -7,7 +7,7 @@ import (
 	. "github.com/onsi/gomega"
 )
 
-func TestPwhl(t *testing.T) {
+func TestPlayers(t *testing.T) {
 	RegisterFailHandler(Fail)
-	RunSpecs(t, "Pwhl Suite")
+	RunSpecs(t, "Players Suite")
 }
