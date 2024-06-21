@@ -11,9 +11,15 @@ var _ = Describe("Player", func() {
 	var jenner *players.Player
 
 	Describe("availability", func() {
-		It("is free agent", func() {
-			Expect(jenner.Availability()).
-				To(Equal(players.AVAILABILITY_FREE_AGENT))
+		Context("when unsigned", func() {
+			It("is free agent", func() {
+				Expect(jenner.Availability()).
+					To(Equal(players.AVAILABILITY_FREE_AGENT))
+			})
+		})
+
+		Context("when signed", func() {
+			It("is not free agent", Pending, func() {})
 		})
 	})
 })
